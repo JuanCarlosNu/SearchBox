@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<body>
-		<div class="container-fluid text-white py-5" style="background-color: black">
-			<h1 class="text-center">Search/Filter Engine
+		<div  style="background-color: black">
+			<h1 >Search/Filter Engine
 			</h1>
 			<h5 class="text-center">Search Your Query Here
 			</h5>
 		</div>
-		<div class="container col-6 mt-5">
-			<input type="text" class="form-control mb-5 p-3" placeholder="Search Here..."
+		<div>
+			<input type="text"  placeholder="Search Here..."
 				id="search-input">
-			<ul class="list-group list-group-flush
-				text-primary h5">
-				<li class="list-group-item p-3">Java</li>
-				<li class="list-group-item p-3">C#</li>
-				<li class="list-group-item p-3">Dart</li>
-				<li class="list-group-item p-3">Javascript</li>
-				<li class="list-group-item p-3">C++</li>
-				<li class="list-group-item p-3">Swift</li>
-				<li class="list-group-item p-3">C</li>
+			<ul >
+				<li class="list-group-item ">Java</li>
+				<li class="list-group-item ">C#</li>
+				<li class="list-group-item ">Dart</li>
+				<li class="list-group-item ">Javascript</li>
+				<li class="list-group-item ">C++</li>
+				<li class="list-group-item ">Swift</li>
+				<li class="list-group-item ">C</li>
+				<li class="list-group-item ">Python</li>
 			</ul>
 		</div>
 
@@ -31,7 +31,7 @@
 	function filterList() {
 		const searchInput = document.querySelector('#search-input');
 		const filter = searchInput.value.toLowerCase();
-		const listItems = document.querySelectorAll('.list-group-item')
+		const listItems = document.querySelectorAll('.list-group-item');
 
 		listItems.forEach((item) =>{
 			let text = item.textContent;
